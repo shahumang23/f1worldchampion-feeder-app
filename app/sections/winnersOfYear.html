@@ -1,0 +1,31 @@
+<section id="main">
+  <div class="container">
+      <a href="./#/wolrdChampions" class="btn btn-info" role="button">Back to drivers list</a>
+      <h2>Formula 1 {{raceYear}} Results</h2>
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th>Grand Prix</th>
+            <th>Date</th>
+            <th>Winner Name</th>
+            <th>Team</th>
+            <th>Laps</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="race in racesWinnerList" ng-class="{'table-success': race.Results[0].Driver.givenName == givenName}">
+            <td>
+              <img ng-src="assets/img/flags/{{race.Circuit.Location.country}}.png" />
+              {{race.raceName}}
+            </td>
+            <td>{{race.date}}</td>
+            <td>{{race.Results[0].Driver.givenName}}&nbsp;{{race.Results[0].Driver.familyName}}</td>
+            <td>{{race.Results[0].Constructor.name}}</td>
+            <td>{{race.Results[0].laps}}</td>
+            <td>{{race.Results[0].Time.time}}</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+</section>
