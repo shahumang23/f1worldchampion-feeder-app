@@ -52,18 +52,14 @@ npm start
 
 Now browse to the app at [`localhost:8000/`].
 
-## Testing
-
-There are two kinds of tests in the `angular-seed` application: Unit tests and end-to-end tests.
-
 ### Running Unit Tests
 
-The `angular-seed` app comes preconfigured with unit tests. These are written in [Jasmine][jasmine],
+The `f1worldchampion-feeder-app` app comes preconfigured with unit tests. These are written in [Jasmine][jasmine],
 which we run with the [Karma][karma] test runner. We provide a Karma configuration file to run them.
 
 * The configuration is found at `karma.conf.js`.
-* The unit tests are found next to the code they are testing and have an `_test.js` suffix (e.g.
-  `view1_test.js`).
+* The unit tests are found next to the code they are testing and have an `spec.js` suffix (e.g.
+  `controller.spect.js`).
 
 The easiest way to run the unit tests is to use the supplied npm script:
 
@@ -95,4 +91,3 @@ npm run test-single-run
 [karma]: https://karma-runner.github.io/
 [node]: https://nodejs.org/
 [npm]: https://www.npmjs.org/
-# f1worldchampion-feeder-app
